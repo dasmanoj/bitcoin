@@ -14,10 +14,10 @@ AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=bitcoind
-BITCOIN_GUI_NAME=bitcoin-qt
-BITCOIN_CLI_NAME=bitcoin-cli
-BITCOIN_TX_NAME=bitcoin-tx
+BITCOIN_DAEMON_NAME=millcoind
+BITCOIN_GUI_NAME=millcoin-qt
+BITCOIN_CLI_NAME=millcoin-cli
+BITCOIN_TX_NAME=millcoin-tx
 
 AC_CANONICAL_HOST
 
@@ -240,7 +240,7 @@ CPPFLAGS="$CPPFLAGS -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS"
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build bitcoin-cli bitcoin-tx (default=yes)])],
+  [build millcoin-cli millcoin-tx (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -252,7 +252,7 @@ AC_ARG_WITH([libs],
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-  [build bitcoind daemon (default=yes)])],
+  [build millcoind daemon (default=yes)])],
   [build_bitcoind=$withval],
   [build_bitcoind=yes])
 
