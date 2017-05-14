@@ -22,12 +22,6 @@
 #include "arith_uint256.h"
 #endif
 
-#define GENESIS_TIME 1483228800		//Unix epoch date Jan 1, 2017
-#define HASH_GENESIS_BLOCK "0x0000004cc2ca6d763d6fb7124663d43d2c27c9d4c062d09aa619563a46986996"
-#define HASH_GENESIS_MERKLE_ROOT "0xf92809c6d28f2da7f4c440597797624c7f4260016d407acbfa1ce58153205ac3"
-#define HASH_REGTEST_GENESIS_BLOCK "0x19f9e5f04545ce5e5a5876d58fe259c46b517fa5851ccce9e357f7503ee2d69b"
-#define HASH_REGTEST_GENESIS_MERKLE_ROOT "0x047bc7dcac01baacd0a11751097678884c76fad731309b4400b496f8d3209fc0"
-
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     CMutableTransaction txNew;
