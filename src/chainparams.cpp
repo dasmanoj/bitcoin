@@ -16,8 +16,6 @@
 
 #include "chainparamsseeds.h"
 
-#define MINE_GENESIS_BLOCK
-
 #ifdef MINE_GENESIS_BLOCK
 #include "arith_uint256.h"
 #endif
